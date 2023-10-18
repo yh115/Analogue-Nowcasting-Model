@@ -1,6 +1,6 @@
 # Analogue-Nowcasting-Model
 ## Table of Contents
-- [Installation](#installation)
+- [Reference Papers](#Papers)
 - [Usage](#usage)
 - [Contribute](#contribute)
 - [Credits](#credits)
