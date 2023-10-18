@@ -46,6 +46,7 @@ This paper proposes an analogue-based model that aims to enhance the short-term 
 •	Relative humidity (rh): 850hPa and 700hPa
 
 **Region:** 95E - 120E longitude 
+           
             5S - 15N latitude.
 
 ### 4. Model design
