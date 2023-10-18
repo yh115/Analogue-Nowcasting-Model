@@ -19,9 +19,11 @@ This paper proposes an analogue-based model that aims to enhance the short-term 
 
 ### 2. Objective
 •	Design an Analogue Rainfall Forecasting (ARF) model using historical data patterns.
-•	Validate the model's performances 
+
+•	Validate the model's performances.
 
 ### 3. Data Selection Rationale
+
 **Years 2010-2022:** The selected data encompasses various climatic oscillations, inclusive of El-Niño, La-Niña, and neutral phases. Such a design criterion ensures that the model robustly accounts for the influences of the ENSO cycle on Singapore's precipitation dynamics.
 
 **Recent Data priority:** To stay relevant amidst the rapidly evolving weather patterns caused by climate change, our focus remains on more recent data. 
@@ -35,24 +37,32 @@ This paper proposes an analogue-based model that aims to enhance the short-term 
 **Resolution:** 0.25° x 0.25°.
 
 **Parameters:**
-•	Geopotential height: 925hPa, 850hPa, 700hPa.
-•	Wind vectors: 925hPa, 850hPa, 700hPa.
-•	Vapour Flux: 925hPa.
-•	Relative humidity: 850hPa and 700hPa
+•	Geopotential height (z): 925hPa, 850hPa, 700hPa.
 
-**Region:** 95E - 120E longitude and 5S - 15N latitude.
+•	Wind vectors (u,v): 925hPa, 850hPa, 700hPa.
+
+•	Vapour Flux (q) : 925hPa.
+
+•	Relative humidity (rh): 850hPa and 700hPa
+
+**Region:** 95E - 120E longitude 
+            5S - 15N latitude.
 
 ### 4. Model design
 
 **4.1 Method A: Event-based analogue approach**
 
 •	Extract daily data points across the specified time frames (00UTC, 03UTC, 06UTC, etc.) and parameters.
+
 •	For each day in the validation set, calculate similarity metrics using the chosen parameters across all historical days in the training set.
+
 •	Identify the most similar historical day and predict rainfall based on that day's actual rainfall.
 
 **4.2 Method B: Hourly analogue approach**
 •	Extract hourly data for the chosen parameters.
+
 •	For each hour in the validation set, calculate similarity metrics using the chosen parameters against the corresponding hours in the training set.
+
 •	Predict rainfall for the current hour based on the most similar historical hour's actual rainfall.
 
  ### 5. Validation and Testing:
