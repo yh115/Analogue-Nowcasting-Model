@@ -3,7 +3,7 @@
 - [Proposal](#Proposal)
 - [Reference Papers](#Papers)
 - [Data](#Data)
-- [](#Autoencoder)
+- [CNN Autoencoder](#Autoencoder)
 - [Credits](#credits)
 - [License](#license)
 
@@ -42,6 +42,17 @@
 **link** https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-pressure-levels?tab=form
 
 ## CNN Autoencoder
+
+### Convolutional Neural Networks (CNN):
+
+CNNs are a category of neural networks that have proven effective in areas such as image recognition and classification. They process data with a grid-like topology, making them particularly suited for analyzing visual data. The core operation in a CNN is the convolution operation, which helps in automatically and adaptively learning spatial hierarchies of features.
+
+### ResNet (Residual Networks):
+
+ResNet is a type of CNN introduced to combat the vanishing gradient problem in deep neural networks. As neural networks grow deeper, the gradients during training can become so small that the network becomes hard to train. ResNet introduces "skip connections" or "shortcuts" that allow gradients to flow through the entire network more easily.
+
+The key innovation in ResNet is the introduction of a "residual block." Instead of trying to learn an underlying function directly, ResNets try to learn the residual function (or the difference) from the identity mapping. This residual learning mechanism allows ResNets to be trained for a large number of layers without significant loss in performance.
+
 https://cv-tricks.com/keras/understand-implement-resnets/#:~:text=The%20major%20differences%20between%20ResNet,the%20form%20of%20identity%20connection.
 
 
