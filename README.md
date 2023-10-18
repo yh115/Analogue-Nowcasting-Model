@@ -8,6 +8,64 @@
 ## Proposal
 - [Proposal for the development of a data driven model for rainfall forecasting.docx](https://github.com/yh115/Analogue-Nowcasting-Model/files/12981503/Proposal.for.the.development.of.a.data.driven.model.for.rainfall.forecasting.docx)
 
+### Proposal for the development of a data-driven model for rainfall forecasting
+
+### 1. Introduction
+Singapore's tropical and maritime setting poses a unique set of meteorological challenges with the rapid changing conditions. Characterized by its high humidity, frequent rainfall, and localized convective activities, the region often faces weather phenomena that challenge traditional forecasting methods. 
+
+Through extensive case studies, it has been observed that Numerical Weather Prediction (NWP) models have limitations in tropical convective weather predictions. The main challenges that affect NWP are complexity of convective process (cloud microphysics schemes do not cover all the parameters that can be calculated), parameterization (models are mainly generic to use and not tailor-made for the regional location as model scales aren’t specific enough). A significant advantage of analogue forecasting is that it is capable of providing realistic weather forecasts without introducing any simplifications in the physics of the atmosphere.
+
+This paper proposes an analogue-based model that aims to enhance the short-term rainfall forecasting. The main hypothesis of analogue approach is that similar atmospheric conditions will evolve in similar ways. Thus, once an analogue is found for the current situation, the forecast for a given period of time can be obtained by the evolution of the meteorological conditions observed after that similar past situation. This is where the analogue model approach emerges as a promising alternative, especially for short-term forecasting. The analogue rainfall model can be used as an additional reference for NWP, providing a complementary perspective and potentially refining the final forecast.
+
+### 2. Objective
+•	Design an Analogue Rainfall Forecasting (ARF) model using historical data patterns.
+•	Validate the model's performances 
+
+### 3. Data Selection Rationale
+**Years 2010-2022:** The selected data encompasses various climatic oscillations, inclusive of El-Niño, La-Niña, and neutral phases. Such a design criterion ensures that the model robustly accounts for the influences of the ENSO cycle on Singapore's precipitation dynamics.
+
+**Recent Data priority:** To stay relevant amidst the rapidly evolving weather patterns caused by climate change, our focus remains on more recent data. 
+
+### 4. Data Details
+
+**Source:** ECMWF ERA5 dataset.
+
+**Time Interval:** Hourly.
+
+**Resolution:** 0.25° x 0.25°.
+
+**Parameters:**
+•	Geopotential height: 925hPa, 850hPa, 700hPa.
+•	Wind vectors: 925hPa, 850hPa, 700hPa.
+•	Vapour Flux: 925hPa.
+•	Relative humidity: 850hPa and 700hPa
+
+**Region:** 95E - 120E longitude and 5S - 15N latitude.
+
+### 4. Model design
+
+**4.1 Method A: Event-based analogue approach**
+
+•	Extract daily data points across the specified time frames (00UTC, 03UTC, 06UTC, etc.) and parameters.
+•	For each day in the validation set, calculate similarity metrics using the chosen parameters across all historical days in the training set.
+•	Identify the most similar historical day and predict rainfall based on that day's actual rainfall.
+
+**4.2 Method B: Hourly analogue approach**
+•	Extract hourly data for the chosen parameters.
+•	For each hour in the validation set, calculate similarity metrics using the chosen parameters against the corresponding hours in the training set.
+•	Predict rainfall for the current hour based on the most similar historical hour's actual rainfall.
+
+ ### 5. Validation and Testing:
+
+
+### 6. Expected Outcomes
+
+•	Improved accuracy in predicting rainfall for Singapore.
+
+•	Better understanding of individual parameter significance in different weather scenarios.
+
+
+
 ## Papers 
 - [An Analog Forecast System for Precipitation Forecasting.pdf](https://github.com/yh115/Analogue-Nowcasting-Model/files/12981265/An.Analog.Forecast.System.for.Precipitation.Forecasting.pdf)
 
