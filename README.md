@@ -45,15 +45,13 @@ This paper proposes an analogue-based model that aims to enhance the short-term 
 
 •	Relative humidity (rh): 850hPa and 700hPa
 
-**Region:** 95E - 120E longitude 
-           
-            5S - 15N latitude.
+**Region:** 95E - 120E longitude         5S - 15N latitude.
 
 ### 4. Model design
 
 **4.1 Method A: Event-based analogue approach**
 
-•	Extract daily data points across the specified time frames (00UTC, 03UTC, 06UTC, etc.) and parameters.
+•	Extract daily data points across the specified time frames (00UTC, 03UTC, 06UTC, 09UTC, 12UTC, 15UTC, 18UTC, 21UTC.) and parameters.
 
 •	For each day in the validation set, calculate similarity metrics using the chosen parameters across all historical days in the training set.
 
@@ -66,7 +64,9 @@ This paper proposes an analogue-based model that aims to enhance the short-term 
 
 •	Predict rainfall for the current hour based on the most similar historical hour's actual rainfall.
 
- ### 5. Validation and Testing:
+### 5. Validation and Testing:
+
+70% of the data is used for training (X_train), and the remaining 30% is reserved for validation (X_val).
 
 
 ### 6. Expected Outcomes
