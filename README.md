@@ -3,7 +3,7 @@
 - [Proposal](#Proposal)
 - [Reference Papers](#Papers)
 - [Data](#Data)
-- [Contribute](#contribute)
+- [](#Autoencoder)
 - [Credits](#credits)
 - [License](#license)
 
@@ -21,9 +21,9 @@
 ## Data
 **Data Details**
 
-**Source**: ECMWF ERA5 dataset.
+**Source**: ECMWF ERA5 dataset
 
-**Time Interval**: Hourly.
+**Time Interval**: Hourly
 
 **Resolution:** 0.25° x 0.25°
 
@@ -40,4 +40,8 @@
 **Region:** 95E - 120E longitude and 5S - 15N latitude.
 
 **link** https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-pressure-levels?tab=form
+
+## CNN Autoencoder
+https://cv-tricks.com/keras/understand-implement-resnets/#:~:text=The%20major%20differences%20between%20ResNet,the%20form%20of%20identity%20connection.
+
 
