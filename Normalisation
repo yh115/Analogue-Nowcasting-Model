@@ -1,0 +1,13 @@
+### Normalise the whole dataset or training data only?
+
+The decision to normalize the data as a whole or after splitting it into training and validation sets is crucial and can impact the performance of the model.
+
+We may need to feed in new unseen data that wasn't available during training. We have to normalise the new data using Min-Max scaling from the training data.
+
+Using the entire dataset for normalisation might introduce data leakage where information from the validation set inadvertently influences the training process. 
+
+In this case:
+
+1.	Use sklearn to split the data into training and validation sets.
+
+2.	Use the training data to fit the scaler and then transform both training and validation sets using this scaler.
