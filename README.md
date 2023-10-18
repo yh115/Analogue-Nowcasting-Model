@@ -8,7 +8,7 @@
 - [License](#license)
 
 ## Proposal
-- [Proposal for the development of a Data driven model for Squall Line forecasting.docx](https://github.com/yh115/Analogue-Nowcasting-Model/files/12981294/Proposal.for.the.development.of.a.Data.driven.model.for.Squall.Line.forecasting.docx)
+- [Proposal for the development of a data driven model for rainfall forecasting.docx](https://github.com/yh115/Analogue-Nowcasting-Model/files/12981503/Proposal.for.the.development.of.a.data.driven.model.for.rainfall.forecasting.docx)
 
 ## Papers 
 - [An Analog Forecast System for Precipitation Forecasting.pdf](https://github.com/yh115/Analogue-Nowcasting-Model/files/12981265/An.Analog.Forecast.System.for.Precipitation.Forecasting.pdf)
