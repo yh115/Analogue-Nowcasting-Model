@@ -4,8 +4,6 @@
 - [Reference Papers](#Papers)
 - [Data](#Data)
 - [CNN Autoencoder](#Autoencoder)
-- [Credits](#credits)
-- [License](#license)
 
 ## Proposal
 - [Proposal for the development of a data driven model for rainfall forecasting.docx](https://github.com/yh115/Analogue-Nowcasting-Model/files/12981503/Proposal.for.the.development.of.a.data.driven.model.for.rainfall.forecasting.docx)
