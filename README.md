@@ -156,3 +156,5 @@ The key innovation in ResNet is the introduction of a "residual block." Instead 
 https://cv-tricks.com/keras/understand-implement-resnets/#:~:text=The%20major%20differences%20between%20ResNet,the%20form%20of%20identity%20connection.
 
 
+    ValueError: Dimensions must be equal, but are 16 and 8 for '{{node mean_squared_error/SquaredDifference}} = SquaredDifference[T=DT_FLOAT](model_1/conv3d_31/Sigmoid, IteratorGetNext:1)' with input shapes: [?,16,4,82,51,3], [?,8,4,82,102,3].
+
