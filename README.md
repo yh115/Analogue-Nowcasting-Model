@@ -49,7 +49,7 @@ Password:Meo630528!
 
 •	Relative humidity (rh): 850hPa and 700hPa
 
-**Region:** 95E - 120E longitude         5S - 15N latitude.
+**Region:** 95E - 110E    1S -4N (95E - 120E longitude         5S - 15N latitude)
 
 ### 4. Model design
 
