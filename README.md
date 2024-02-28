@@ -116,7 +116,7 @@ Password:Meo630528!
 
 ### Understanding the Autoencoder:
 
-An autoencoder is a type of neural network used for unsupervised learning. It aims to encode the input data into a lower-dimensional latent space (encoding) and then decode it back to its original form (decoding). The encoder and decoder are trained together to minimize the difference between the input and the output (reconstruction loss).
+An autoencoder is a type of neural network used for deep machine learning. It aims to encode the input data into a lower-dimensional latent space (encoding) and then decode it back to its original form (decoding). The encoder and decoder are trained together to minimize the difference between the input and the output (reconstruction loss).
 
 ### Application to Weather Parameters:
 
